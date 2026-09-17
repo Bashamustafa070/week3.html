@@ -1,0 +1,87 @@
+/* Color Palette */
+:root {
+  --primary: #008080;   /* teal */
+  --secondary: #333333; /* dark gray */
+  --accent: #0f0bcb;    /* pink */
+  --background: #f9f9f9;
+}
+
+/* General page styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--secondary);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: var(--primary);
+}
+
+/* Card styling for sections */
+header, #add-expense, #your-expenses {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+thead {
+  background-color: var(--primary);
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Form styling */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input, form select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+}
+form input:focus, form select:focus {
+  outline: 2px solid var(--accent);
+}
+
+/* Button styling */
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #390ae3;
+}
